@@ -1,18 +1,22 @@
 .arrivals {
-    padding: 48px 0;
+  padding: 48px 0;
 }
 
 .arrivals__row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 // .arrivals__title {
 // }
 
-
 // .arrivals__dots {
 // }
+
+.arrivals__slider {
+  display: flex;
+  gap: 24px;
+}
