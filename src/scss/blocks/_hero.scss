@@ -5,6 +5,10 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include mediaBg() {
+    background-image: url(./../img/hero/bg@2x.jpg);
+  }
 }
 
 .hero__container {
