@@ -13,14 +13,20 @@
   line-height: 1.7777;
   //   }
 
+  @include mobile {
+    font-size: 16px;
+  }
+
   &--small {
     padding: 9px 40px;
     font-size: 16px;
     line-height: 1.75;
   }
 
-  &--wide{
+  &--wide {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &:hover {

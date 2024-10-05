@@ -10,7 +10,7 @@ nav {
 }
 .nav__logo {
   display: flex;
-  gap: 4px;
+  gap: 11px;
   align-items: center;
 }
 
@@ -33,10 +33,13 @@ nav {
   align-items: center;
 }
 
-.nav__btn {
-  display: flex;
+.nav__btn-mobile-nav {
+  display: none;
   align-items: center;
-  gap: 5px;
+
+  @include mobile{
+    display: flex;
+  }
 }
 
 @include mobile {

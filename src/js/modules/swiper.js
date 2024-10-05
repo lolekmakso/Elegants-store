@@ -1,22 +1,24 @@
 import Swiper from 'swiper/bundle';
-// import 'swiper/css/bundle';
 
-function swiper (){
+function swiper() {
+	const swiper = new Swiper('.swiper', {
+		// slidesPerView: 5,
+		slidesPerView: 'auto',
+		spaceBetween: 12,
 
-    const swiper = new Swiper('.swiper', {
-        slidesPerView: 4.5,
-        spaceBetween: 24,
-      
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      
-        // navigation: {
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev',
-        // },
-      });
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			// dynamicBullets: true,
+		},
+
+		breakpoints: {
+			840: {
+				spaceBetween: 24,
+			},
+		},
+	});
 }
 
-export default swiper
+export default swiper;

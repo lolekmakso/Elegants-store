@@ -33,6 +33,7 @@
   position: relative;
   background-color: #f3f5f7;
   text-align: center;
+  // height: 100px;
 }
 .card__new {
   position: absolute;
@@ -71,6 +72,10 @@
   opacity: 0;
   transform: translateY(50%);
   pointer-events: none;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .card__desc {
@@ -87,6 +92,12 @@
   font-size: 16px;
   line-height: 1.625;
   color: #141718;
+
+  &--elipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+  }
 }
 .card__price {
   font-weight: 600;

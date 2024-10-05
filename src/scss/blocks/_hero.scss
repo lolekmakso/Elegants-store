@@ -6,13 +6,22 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  // @include mediaBg() {
-  //   background-image: url(./../img/hero/bg@2x.jpg);
-  // }
+  @include mediaBg() {
+    background-image: url(./../img/hero/bg@2x.jpg);
+  }
 
-  @include tablet{
+  @include tablet {
     height: 500px;
- }
+  }
+
+  @include mobile {
+    height: auto;
+    padding-bottom: 390px;
+    background-image: url(./../img/hero/bg-mobile.jpg);
+    @include mediaBg() {
+      background-image: url(./../img/hero/bg-mobile@2x.jpg);
+    }
+  }
 }
 
 .hero__container {
@@ -26,8 +35,17 @@
 
   padding-right: calc((100% - var(--container-width)) / 2);
 
-  @include tablet{
+  @include tablet {
     padding-right: var(--container-padding);
+  }
+
+  @include mobile {
+    padding: 40px var(--container-padding);
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    max-width: 575px;
+    margin: 0 auto;
   }
 }
 
@@ -45,8 +63,12 @@
   font-family: var(--font-accent);
   text-wrap: balance;
 
-  @include tablet{
-     font-size: 56px;
+  @include tablet {
+    font-size: 56px;
+  }
+
+  @include mobile {
+    font-size: 48px;
   }
 
   span {
@@ -59,4 +81,9 @@
   color: #121212;
   font-size: 20px;
   line-height: 1.6;
+
+  @include mobile {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
 }
