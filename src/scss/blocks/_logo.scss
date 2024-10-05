@@ -3,4 +3,8 @@
     font-weight: 500;
     font-family: var(--font-accent);
     color: #000;
+
+    @include mobile{
+        font-size: 16px;
+    }
 }

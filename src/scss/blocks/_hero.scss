@@ -6,9 +6,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @include mediaBg() {
-    background-image: url(./../img/hero/bg@2x.jpg);
-  }
+  // @include mediaBg() {
+  //   background-image: url(./../img/hero/bg@2x.jpg);
+  // }
+
+  @include tablet{
+    height: 500px;
+ }
 }
 
 .hero__container {
@@ -21,6 +25,10 @@
   );
 
   padding-right: calc((100% - var(--container-width)) / 2);
+
+  @include tablet{
+    padding-right: var(--container-padding);
+  }
 }
 
 .hero__contant {
@@ -35,6 +43,11 @@
   font-weight: 500;
   letter-spacing: -3px;
   font-family: var(--font-accent);
+  text-wrap: balance;
+
+  @include tablet{
+     font-size: 56px;
+  }
 
   span {
     color: #377dff;
@@ -46,9 +59,4 @@
   color: #121212;
   font-size: 20px;
   line-height: 1.6;
-}
-
-.hero__link {
-}
-.btn {
 }

@@ -10,34 +10,60 @@
 	<body>
 		
 		<div class="tagline">
-  <img class="tagline__icon" src="./img/icons/ticket-percent.svg" alt="icon" />
-  <div class="tagline__desc">30% off storewide — Limited time! Shop Now</div>
-  <a href="#!" class="tagline__link">
-    Shop Now
-    <img src="../../img/icons/arrow-right.svg" alt="icon" />
-  </a>
+  <img class="tagline__icon" src="./img/icons/ticket-percent.svg" alt="Icon">
+  <span class="tagline__desc">
+      30% off storewide — Limited time!
+  </span>
+  <span class="tagline__link">
+      Shop Now
+      <img src="./img/icons/arrow-right.svg" alt="Icon">
+  </span>
 
   <button class="tagline__close">
-    <img src="./img/icons/close.svg" alt="close">
+      <!-- <img src="./img/icons/close.svg" alt="Close"> -->
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.4419 5.44194C15.686 5.19786 15.686 4.80214 15.4419 4.55806C15.1979 4.31398 14.8021 4.31398 14.5581 4.55806L10 9.11612L5.44194 4.55806C5.19786 4.31398 4.80214 4.31398 4.55806 4.55806C4.31398 4.80214 4.31398 5.19786 4.55806 5.44194L9.11612 10L4.55806 14.5581C4.31398 14.8021 4.31398 15.1979 4.55806 15.4419C4.80214 15.686 5.19786 15.686 5.44194 15.4419L10 10.8839L14.5581 15.4419C14.8021 15.686 15.1979 15.686 15.4419 15.4419C15.686 15.1979 15.686 14.8021 15.4419 14.5581L10.8839 10L15.4419 5.44194Z"/>
+      </svg>
   </button>
+  <a href="#!" class="tagline__link-overlay"></a>
 </div>
 
 		<nav class="nav">
   <div class="container">
     <div class="nav__row">
-      <a href="#" class="nav__logo logo"> 3legant. </a>
+
+      <div class="nav__logo">
+        <button class="nav__btn">
+          <img src="./img/icons/menu.svg" alt="nav" />
+        </button>
+        <a href="#" class="logo"> 3legant. </a>
+      </div>
+
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-        <li class="nav__item"><button class="nav__link" href="#">Shop <img src="./img/icons/chevron-down.svg" alt=""></button></li>
-        <li class="nav__item"><button class="nav__link" href="#">Product <img src="./img/icons/chevron-down.svg" alt=""></button></li>
+        <li class="nav__item">
+          <button class="nav__link" href="#">
+            Shop <img src="./img/icons/chevron-down.svg" alt="" />
+          </button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__link" href="#">
+            Product <img src="./img/icons/chevron-down.svg" alt="" />
+          </button>
+        </li>
         <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
       </ul>
       <div class="nav__btns">
-        <button class="nav__btn"><img src="../../img/icons/search.svg" alt=""></button>
-        <button class="nav__btn"><img src="../../img/icons/user.svg" alt=""></button>
+        <button class="nav__btn nav__btn--search">
+          <img src="../../img/icons/search.svg" alt="" />
+        </button>
+        <button class="nav__btn nav__btn--user">
+          <img src="../../img/icons/user.svg" alt="" />
+        </button>
         <button class="nav__btn">
-            <img src="../../img/icons/shopping bag.svg" alt="">
-            <span class="nav__btn-cont">2</span>
+          <img src="../../img/icons/shopping bag.svg" alt="" />
+          <span class="nav__btn-cont">2</span>
         </button>
       </div>
     </div>
@@ -45,17 +71,11 @@
 </nav>
 
 		<section class="hero">
-  <div class="container">
-    <!-- <div class="hero__content">
-
-        </div> -->
-  </div>
 
   <div class="hero__container">
     <div class="hero__contant">
       <h1 class="hero__title">
-        Listen to <br />
-        the <span>amazing</span> music sound.
+        Listen to&nbsp;the <span>amazing</span> music sound.
       </h1>
 
       <div class="hero__desc">
@@ -653,7 +673,7 @@
       srcset="./img/arrivals/01@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -703,7 +723,7 @@
       srcset="./img/arrivals/02@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -751,7 +771,7 @@
       srcset="./img/arrivals/03@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -797,7 +817,7 @@
       srcset="./img/arrivals/04@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -847,7 +867,7 @@
       srcset="./img/arrivals/05@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -893,11 +913,11 @@
 <article class="card">
   <div class="card__picture">
     <img
-      src="./img/arrivals/01.jpg"
-      srcset="./img/arrivals/01@2x.jpg 2x"
+      src="./img/arrivals/06.jpg"
+      srcset="./img/arrivals/06@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -935,19 +955,19 @@
       <img src="./img/icons/star.svg" alt="star" />
       
     </div>
-    <h3 class="card__title">Skullcandy - Crusher anc 2 wireless headphones</h3>
-    <div class="card__price">$299.99</div>
+    <h3 class="card__title">JBL Reflect Flow Pro+ Bluetooth Truly Wireless Sports</h3>
+    <div class="card__price">$179.95</div>
   </div>
   <a href="!#" class="card__link"></a>
 </article>
 <article class="card">
   <div class="card__picture">
     <img
-      src="./img/arrivals/02.jpg"
-      srcset="./img/arrivals/02@2x.jpg 2x"
+      src="./img/arrivals/07.jpg"
+      srcset="./img/arrivals/07@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -983,7 +1003,7 @@
       <img src="./img/icons/star.svg" alt="star" />
       
     </div>
-    <h3 class="card__title">Beats Studio Pro</h3>
+    <h3 class="card__title">BoseQuietComfort Headphones</h3>
     <div class="card__price">$349.99</div>
   </div>
   <a href="!#" class="card__link"></a>
@@ -991,11 +1011,11 @@
 <article class="card">
   <div class="card__picture">
     <img
-      src="./img/arrivals/03.jpg"
-      srcset="./img/arrivals/03@2x.jpg 2x"
+      src="./img/arrivals/08.jpg"
+      srcset="./img/arrivals/08@2x.jpg 2x"
       alt=""
     />
-    <div class="card__new">new</div>
+    <div class="card__new">hot</div>
     <div class="card__fav">
       <button class="btn-fav">
         <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
@@ -1029,108 +1049,8 @@
       <img src="./img/icons/star.svg" alt="star" />
       
     </div>
-    <h3 class="card__title">Sony - WH-CH720N Wireless Noise Canceling</h3>
+    <h3 class="card__title">AKGY600NC Wireless</h3>
     <div class="card__price">$149.99</div>
-  </div>
-  <a href="!#" class="card__link"></a>
-</article>
-<article class="card">
-  <div class="card__picture">
-    <img
-      src="./img/arrivals/04.jpg"
-      srcset="./img/arrivals/04@2x.jpg 2x"
-      alt=""
-    />
-    <div class="card__new">new</div>
-    <div class="card__fav">
-      <button class="btn-fav">
-        <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
-        <svg
-          class="btn-fav__svg"
-          width="20"
-          height="16"
-          viewBox="0 0 20 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M10.577 3.76422C10.2546 4.07365 9.74548 4.07365 9.42304 3.76422L8.84604 3.2105C8.17068 2.56239 7.25832 2.16667 6.25004 2.16667C4.17897 2.16667 2.50004 3.8456 2.50004 5.91667C2.50004 7.90219 3.57486 9.54171 5.1265 10.8888C6.67947 12.237 8.53621 13.1312 9.64558 13.5876C9.87754 13.683 10.1225 13.683 10.3545 13.5876C11.4639 13.1312 13.3206 12.237 14.8736 10.8888C16.4252 9.54171 17.5 7.90218 17.5 5.91667C17.5 3.8456 15.8211 2.16667 13.75 2.16667C12.7418 2.16667 11.8294 2.56239 11.154 3.2105L10.577 3.76422ZM10 2.00798C9.0268 1.074 7.70545 0.5 6.25004 0.5C3.2585 0.5 0.833374 2.92512 0.833374 5.91667C0.833374 11.2235 6.64199 14.1542 9.01153 15.1289C9.64968 15.3914 10.3504 15.3914 10.9885 15.1289C13.3581 14.1542 19.1667 11.2235 19.1667 5.91667C19.1667 2.92512 16.7416 0.5 13.75 0.5C12.2946 0.5 10.9733 1.074 10 2.00798Z"
-          />
-        </svg>
-      </button>
-    </div>
-    <div class="card__btn">
-      <button class="btn btn--small btn--wide">Add to cart</button>
-    </div>
-  </div>
-  <div class="card__desc">
-    <div class="card__rating">
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-    </div>
-    <h3 class="card__title">Skullcandy - Rail True Wireless Earbuds</h3>
-    <div class="card__price">$79.99</div>
-  </div>
-  <a href="!#" class="card__link"></a>
-</article>
-<article class="card">
-  <div class="card__picture">
-    <img
-      src="./img/arrivals/05.jpg"
-      srcset="./img/arrivals/05@2x.jpg 2x"
-      alt=""
-    />
-    <div class="card__new">new</div>
-    <div class="card__fav">
-      <button class="btn-fav">
-        <!-- <img src="./img/icons/fav.svg" alt="fav" /> -->
-        <svg
-          class="btn-fav__svg"
-          width="20"
-          height="16"
-          viewBox="0 0 20 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M10.577 3.76422C10.2546 4.07365 9.74548 4.07365 9.42304 3.76422L8.84604 3.2105C8.17068 2.56239 7.25832 2.16667 6.25004 2.16667C4.17897 2.16667 2.50004 3.8456 2.50004 5.91667C2.50004 7.90219 3.57486 9.54171 5.1265 10.8888C6.67947 12.237 8.53621 13.1312 9.64558 13.5876C9.87754 13.683 10.1225 13.683 10.3545 13.5876C11.4639 13.1312 13.3206 12.237 14.8736 10.8888C16.4252 9.54171 17.5 7.90218 17.5 5.91667C17.5 3.8456 15.8211 2.16667 13.75 2.16667C12.7418 2.16667 11.8294 2.56239 11.154 3.2105L10.577 3.76422ZM10 2.00798C9.0268 1.074 7.70545 0.5 6.25004 0.5C3.2585 0.5 0.833374 2.92512 0.833374 5.91667C0.833374 11.2235 6.64199 14.1542 9.01153 15.1289C9.64968 15.3914 10.3504 15.3914 10.9885 15.1289C13.3581 14.1542 19.1667 11.2235 19.1667 5.91667C19.1667 2.92512 16.7416 0.5 13.75 0.5C12.2946 0.5 10.9733 1.074 10 2.00798Z"
-          />
-        </svg>
-      </button>
-    </div>
-    <div class="card__btn">
-      <button class="btn btn--small btn--wide">Add to cart</button>
-    </div>
-  </div>
-  <div class="card__desc">
-    <div class="card__rating">
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-      <img src="./img/icons/star.svg" alt="star" />
-      
-    </div>
-    <h3 class="card__title">Beats Studio Pro</h3>
-    <div class="card__price">$224.99</div>
   </div>
   <a href="!#" class="card__link"></a>
 </article>
@@ -1144,7 +1064,7 @@
     <div class="promotion__content">
       <div class="promotion__desc">
         <p class="promotion__tagline">PROMOTION</p>
-        <h2 class="promotion__title">Hurry up! 40% OFF</h2>
+        <h2 class="promotion__title">Hurry up! 40%&nbsp;OFF</h2>
         <div class="promotion__text">
           <p>Thousands of high tech are waiting for you</p>
         </div>
