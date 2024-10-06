@@ -1,6 +1,6 @@
-## Верстка сайта Elegant Store
+## Elegant Store
 - HTML
 - SCSS
 - Gulp
 
-[Смотреть демо](https://lolekmakso.github.io/Elegants-store/)
+[watch demo](https://lolekmakso.github.io/Elegants-store/)
