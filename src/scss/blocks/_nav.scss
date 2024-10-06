@@ -1,6 +1,12 @@
 nav {
   background-color: #ffc95c;
   padding: 16px 0;
+
+  @include mobile {
+    position: sticky;
+    top: 0;
+    z-index: 98;
+  }
 }
 
 .nav__row {
@@ -37,7 +43,7 @@ nav {
   display: none;
   align-items: center;
 
-  @include mobile{
+  @include mobile {
     display: flex;
   }
 }
@@ -61,4 +67,8 @@ nav {
   color: var(--tagline-link);
   text-align: center;
   border-radius: 50%;
+
+  &--white {
+    color: #fff;
+  }
 }
