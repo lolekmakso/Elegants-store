@@ -16,9 +16,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 
-  @include mobile {
+  @media (max-width: 430px) {
     grid-template-columns: 1fr;
     grid-auto-rows: 180px;
     gap: 16px;
-  }
+}
 }
